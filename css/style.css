@@ -15,3 +15,10 @@ body {
 .not-visible {
   display: none;
 }
+
+button,
+input {
+  background-color: #f75c71;
+  border: 1px solid #f09d81;
+  border-radius: 10px;
+}

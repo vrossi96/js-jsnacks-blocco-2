@@ -12,15 +12,24 @@ Il programma stampa la somma di tutti i numeri inseriti.
 Esegui questo programma in due versioni, con il for e con il while.
 */
 let sBonusS1Sum = 0;
+const fiveNumbers = [];
 
 s1Calculate.addEventListener('click', function() {
   console.log(s1Input.value);
+  
   let calculate = false;
+  
   while (calculate == false){
+    fiveNumbers.push(s1Input.value);
+    console.table(fiveNumbers);
     sBonusS1Sum += parseInt(s1Input.value);
     calculate = true;
   }
   console.log(sBonusS1Sum);
   s1Result.innerText = sBonusS1Sum;
-
+  
+  if (fiveNumbers.length === 5) {
+    s1Calculate.className = "not-visible";
+  }
+  
 })
