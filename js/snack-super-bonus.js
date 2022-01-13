@@ -33,3 +33,5 @@ s1Calculate.addEventListener('click', function() {
   }
   
 })
+
+//! Snack 2
