@@ -18,3 +18,4 @@ while (i <= 5) {
 }
 
 console.log(sum);
+
