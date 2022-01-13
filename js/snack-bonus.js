@@ -7,6 +7,7 @@ Esegui questo programma in due versioni, con il for e con il while.
 // Bonus show
 const bonusS1Result = document.getElementById('bonus-s1-result');
 const bonusS2Result = document.getElementById('bonus-s2-result');
+const bonusS3Result = document.getElementById('bonus-s3-result');
 
 let i = 1;
 let bonusS1Sum = 0;
@@ -37,3 +38,25 @@ while (check == false) {
   }
   check = true;
 }
+
+//! Snack 3
+const arrayName = ['Luigi', 'Mario', 'Wario', 'Waluigi', 'Gigi', 'Bastone', 'Gastone', 'Paolino'];
+const arraySurname = ['Pigna', 'Duro', 'Bello', 'Brutto', 'Bestia', 'Rovina', 'Ruperta', 'Blob'];
+let namesMerged = [];
+
+
+while (namesMerged.length < 3) {
+  const numberName = Math.floor(Math.random() * arrayName.length);
+  const numberSurname = Math.floor(Math.random() * arraySurname.length);
+  const invited = arrayName[numberName] + ' ' + arraySurname[numberSurname];
+
+  console.log(invited);
+
+  if (!namesMerged.includes(invited)) {
+    namesMerged.push(invited)
+  }
+}
+
+bonusS3Result.innerText = namesMerged;
+
+//! Snack 4
