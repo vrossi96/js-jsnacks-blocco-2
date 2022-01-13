@@ -1,3 +1,8 @@
+const bonusSnack1 = document.getElementById('bonus-snack-1');
+const bonusSnack2 = document.getElementById('bonus-snack-2');
+bonusSnack1.className = bonusSnack1.classList + " snack-active";
+bonusSnack2.className = bonusSnack2.classList + " snack-active";
+
 //********** Contatore
 let i = 0;
 

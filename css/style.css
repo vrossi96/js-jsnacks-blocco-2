@@ -6,7 +6,9 @@ body {
 .not-visible {
   display: none;
 }
-
+.snack-active {
+  background-color: #586ced;
+}
 /* First bonus */
 #bonus-container {
   background-color: #995cf7;

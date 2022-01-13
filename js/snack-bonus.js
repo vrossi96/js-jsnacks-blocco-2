@@ -1,3 +1,7 @@
+// Nascondo parte del super bonus
+const superBonus = document.getElementById('super-b-container');
+superBonus.className = "not-visible";
+
 // Bonus show
 const bonusS1Result = document.getElementById('bonus-s1-result');
 const bonusS2Result = document.getElementById('bonus-s2-result');
