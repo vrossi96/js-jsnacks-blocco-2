@@ -3,6 +3,8 @@ const bonusS1Result = document.getElementById('bonus-s1-result');
 const bonusS2Result = document.getElementById('bonus-s2-result');
 const bonusS3Result = document.getElementById('bonus-s3-result');
 const bonusS4Result = document.getElementById('bonus-s4-result');
+const bonusS5ResultA1 = document.getElementById('bonus-s5-result-a1');
+const bonusS5ResultA2 = document.getElementById('bonus-s5-result-a2');
 
 //********** Contatore
 let i = 0;
@@ -17,7 +19,7 @@ let bonusS1Sum = 0;
 
 while (i < 5) {
   // Chiedo all'utente i numeri per 5 volte
-  const number = parseInt(prompt('Inserisci un numero'));
+  const number = parseInt(prompt('Inserisci un numero', 9));
   // Sommo i numeri
   bonusS1Sum += number;
   // Contatore
@@ -36,7 +38,7 @@ let check = false;
 
 while (check == false) {
   // Chiedo all'utente un numero
-  const number = parseInt(prompt('Inserisci un numero'));
+  const number = parseInt(prompt('Inserisci un numero', 3));
   // Se è pari lo stampo
   if (number % 2 == 0) {
     bonusS2Result.innerText = number;
@@ -83,11 +85,34 @@ let bonusS4Sum = 0;
 
 // Contatore funziona fin che è inferiore alla lunghezza dell array
 while (i < numbers.length) {
-  sum += numbers[i];
+  bonusS4Sum += numbers[i];
   // Contatore che parte dal primo numero e passa tutti i numeri dispari
   i += 2; 
 }
 
-bonusS4Result.innerText = sum;
+bonusS4Result.innerText = bonusS4Sum;
 
 //! Snack 5
+/*
+Crea due array che hanno un numero di elementi diversi.
+Aggiungi elementi casuali all’array che ha meno elementi,
+fino a quando ne avrà tanti quanti l’altro.
+*/
+
+let array1 = [15, 25, 75, 28, 33, 58];
+let array2 = [15, 25, 75, 28, 33, 58, 85, 99, 69];
+
+// Fin che sono di diversa lunghezza allora eseguo i comandi all'interno
+while (array1.length !== array2.length) {
+  // Creo un numero random
+  const randomNumber = Math.floor(Math.random() * 333) +1;
+  // Il numero casuale viene aggiunto all array più corto
+  if (array1 < array2){
+    array1.push(randomNumber);
+  } else {
+    array2.push(randomNumber);
+  }
+}
+
+bonusS5ResultA1.innerText = array1; 
+bonusS5ResultA2.innerText = array2;
