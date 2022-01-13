@@ -1,0 +1,9 @@
+#bonus-container {
+  background-color: #995cf7;
+}
+
+#bonus-container .col-2 {
+  border: 2px dashed #f75c71;
+  border-radius: 0 0 25px 25px;
+  border-top: none;
+}
