@@ -19,10 +19,13 @@ body {
 }
 
 /* Super bonus */
-#sb-snack1 {
+#sb-snack1,
+#sb-snack2 {
   border: 2px dashed #f75c71;
-  border-radius: 0 0 25px 25px;
   border-top: none;
+}
+#sb-snack2 {
+  border-radius: 0 0 25px 25px;
 }
 
 button,
