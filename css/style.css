@@ -1,5 +1,5 @@
 body {
-  background-color: #586ced;
+  background-color: #4fe0bc;
 }
 
 /* Utilities */
@@ -7,15 +7,15 @@ body {
   display: none;
 }
 .snack-active {
-  background-color: #586ced;
+  background-color: #4fe0bc;
 }
 /* First bonus */
 #bonus-container {
-  background-color: #995cf7;
+  background-color: #3ee6fa;
 }
 
 #bonus-container .col-2 {
-  border: 2px dashed #f75c71;
+  border: 2px dashed #67b3f0;
   border-radius: 0 0 25px 25px;
   border-top: none;
 }
@@ -23,7 +23,7 @@ body {
 /* Super bonus */
 #sb-snack1,
 #sb-snack2 {
-  border: 2px dashed #f75c71;
+  border: 2px dashed #67b3f0;
   border-top: none;
 }
 #sb-snack2 {
@@ -32,7 +32,7 @@ body {
 
 button,
 input {
-  background-color: #f75c71;
-  border: 1px solid #f09d81;
+  background-color: #67b3f0;
+  border: 1px solid #5afa98;
   border-radius: 10px;
 }
